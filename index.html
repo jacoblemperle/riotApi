@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="statsApp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DevMtn Travels app using ui-routes ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="styles/base/reset.css">
+   <!-- <link rel="stylesheet" href="styles/fonts/fonts.css"> -->
+    <link rel="stylesheet" href="styles/views/about.css">
+    <link rel="stylesheet" href="styles/views/main.css">
+    <link rel="stylesheet" href="styles/views/home.css">
+    <link rel="stylesheet" href="styles/views/contact.css">
+  </head>
+  <body ng-controller="mainCtrl">
+
+    <main>
+      <section class="home-page-container">
+        <header>
+          <nav>
+            <ul class='nav-attr'>
+              <li><a class="nav-text" ui-sref='home'>Home</a></li>
+              <li><a ui-sref='about'>About</a></li>
+              <li><a ui-sref='contact'>Contact</a></li>
+
+            </ul>
+          </nav>
+        </header>
+
+
+      </section>
+      <ui-view></ui-view>
+
+<div ng-repeat="champ in champs" class="work-mother">
+
+<img  ng-styleclass="image-repeats" ui-sref="about" ng-click="getSpecificChamp(champ.id)" src="http://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/{{champ.image.full}}" alt="" />
+</div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/services/mainService.js"></script>
+  </body>
+</html>

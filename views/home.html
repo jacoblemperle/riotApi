@@ -1,3 +1,5 @@
-<div ng-repeat="champ in champs" class="work-mother">
-<img  ng-styleclass="image-repeats" ui-sref="about" ng-click="getSpecificChamp(champ.id)" src="http://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/{{champ.image.full}}" alt="" />
+<div class="container-champs">
+    <div ng-repeat="champ in champs" class="champ-img-container">
+        <img ng-styleclass="image-repeats" ui-sref="about" ng-click="getSpecificChamp(champ.id)" src="http://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/{{champ.image.full}}" alt="" />
+    </div>
 </div>

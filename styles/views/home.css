@@ -1,0 +1,10 @@
+.champ-img-container {
+  display:flex;
+  flex-direction: row;
+  float: left;
+  margin: 5px;
+  
+}
+.container-champs {
+  background-color: black;
+}

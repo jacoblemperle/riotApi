@@ -32,10 +32,7 @@
       </section>
       <ui-view></ui-view>
 
-<div ng-repeat="champ in champs" class="work-mother">
 
-<img  ng-styleclass="image-repeats" ui-sref="about" ng-click="getSpecificChamp(champ.id)" src="http://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/{{champ.image.full}}" alt="" />
-</div>
 
     </main>
 
@@ -44,5 +41,6 @@
     <script src="js/app.js"></script>
     <script src="js/mainCtrl.js"></script>
     <script src="js/services/mainService.js"></script>
+    <script src="js/nameDirective.js"></script>
   </body>
 </html>

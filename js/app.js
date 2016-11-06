@@ -15,5 +15,5 @@ angular.module('statsApp', ['ui.router'])
     });
 
     $urlRouterProvider
-      .otherwise('/')
-})
+      .otherwise('/');
+});

@@ -1,4 +1,70 @@
-.home-page-container {
+
+.nav {
+  margin:0px;
+}
+
+.navbar{
+  background:transparent;
+  background-color:transparent;
+  border-color:transparent;
+  margin-bottom:0px;
+  font-family: 'Droid Serif', serif;
+  font-size:20px;
+}
+
+.navbar-brand {
+  font-size:30px;
+  font-family: 'Droid Serif', serif;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  height: 400px;
+  background-attachment: scroll;
+  background-image: url("../../img/brand-image.jpg");
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+header .intro-text .intro-heading {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+@media(min-width:768px) {
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+
+  header .intro-text .intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+  }
+}
+
+.navbar.trans {
+  background:gray !important;
+}
+/*.home-page-container {
   width: 100%;
   height: 40vh;
   min-height: 300px;
@@ -33,4 +99,4 @@ a {
 
   display: flex;
   justify-content: space-around;
-}
+}*/

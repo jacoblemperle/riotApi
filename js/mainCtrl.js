@@ -1,4 +1,4 @@
-angular.module('statsApp').controller('mainCtrl', function($scope, mainService) {
+angular.module('statsApp').controller('mainCtrl', function($scope, mainService, getSummoner) {
 
   $scope.getChampions = function() {
     mainService.getChampions().then(function(champs) {
@@ -16,5 +16,12 @@ angular.module('statsApp').controller('mainCtrl', function($scope, mainService) 
 
         });
     };
+
+    // $scope.getSpecificSummoner = function(summonerName){
+    //   getSummoner.getSpecificSummoner(summonerName).then(function(summonerInfo){
+    //     $scope.summonerInfo = summonerInfo;
+    //     console.log($scope.summonerInfo);
+    //   })
+    // }
 
   });

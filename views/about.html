@@ -1,4 +1,4 @@
-<img  ng-styleclass="image-repeats" ui-sref="about" ng-click="getSpecificChamp(champ.id)" src="http://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/{{champ.image.full}}" alt="" />
+<!-- <img  ng-styleclass="image-repeats" ui-sref="about" ng-click="getSpecificChamp(champ.id)" src="http://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/{{champ.image.full}}" alt="" />
 <span></span> <br />
 <span>Armor: {{realMVP.armor}}</span> <br />
 <span>Armor per lvl: {{realMVP.armorperlevel}}</span><br />
@@ -15,4 +15,84 @@
 <span>Mana per lvl: {{realMVP.mpperlevel}}</span> <br />
 <span>Mana Regen per lvl: {{realMVP.manaregenperlevel}}</span> <br />
 <span>Spell Block: {{realMVP.spellblock}}</span> <br />
-<span>Spell Block per level: {{realMVP.spellblockperlevel}}</span> <br />
+<span>Spell Block per level: {{realMVP.spellblockperlevel}}</span> <br /> -->
+<div class="table-title">
+<h3>Data Table</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Stats:</th>
+<th class="text-left"></th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">Armor</td>
+<td class="text-left">{{realMVP.armor}}</td>
+</tr>
+<tr>
+<td class="text-left">Armor per Level</td>
+<td class="text-left">{{realMVP.armorperlevel}}</td>
+</tr>
+<tr>
+<td class="text-left">Attack Damage</td>
+<td class="text-left">{{realMVP.attackdamage}}</td>
+</tr>
+<tr>
+<td class="text-left">Attack Damage per Level</td>
+<td class="text-left">{{realMVP.attackdamageperlevel}}</td>
+</tr>
+<tr>
+<td class="text-left">Attack Range</td>
+<td class="text-left">{{realMVP.attackrange}}</td>
+</tr>
+<tr>
+<td class="text-left">Attack Speed per Level</td>
+<td class="text-left">{{realMVP.attackspeedperlevel}}</td>
+</tr>
+<tr>
+<td class="text-left">HP</td>
+<td class="text-left">{{realMVP.hp}}</td>
+</tr>
+<tr>
+<td class="text-left">HP per Level</td>
+<td class="text-left">{{realMVP.hpperlevel}}</td>
+</tr>
+<tr>
+<td class="text-left">HP Regen</td>
+<td class="text-left">{{realMVP.hpregen}}</td>
+</tr>
+<tr>
+<td class="text-left">HP Regen per Level</td>
+<td class="text-left">{{realMVP.hpregenperlevel}}</td>
+</tr>
+<tr>
+<td class="text-left">Move Speed</td>
+<td class="text-left">{{realMVP.movespeed}}</td>
+</tr>
+<tr>
+<td class="text-left">Mana</td>
+<td class="text-left">{{realMVP.mp}}</td>
+</tr>
+<tr>
+<td class="text-left">Mana per Level</td>
+<td class="text-left">{{realMVP.mpperlevel}}</td>
+</tr>
+<tr>
+<td class="text-left">Mana Regen per Level</td>
+<td class="text-left">{{realMVP.manaregenperlevel}}</td>
+</tr>
+<tr>
+<td class="text-left">Spell Block</td>
+<td class="text-left">{{realMVP.spellblock}}</td>
+</tr>
+<tr>
+<td class="text-left">Spell Block per Level</td>
+<td class="text-left">{{realMVP.spellblockperlevel}}</td>
+</tr>
+
+
+
+</tbody>
+</table>

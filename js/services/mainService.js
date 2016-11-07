@@ -23,7 +23,7 @@ this.getSpecificChamp = function(id) {
     url: getSpecificChampData
   }).then(function(response) {
     console.log(response);
-    return response.data.stats;
+    return response.data;
 
   })
   return "ooops"

@@ -1,5 +1,29 @@
-.image-center-please {
-  display: inline-block;
-  float: left;
-  margin: 5px;
+.container-champs {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
+
+.image-center-please {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  margin: 5px;
+
+}
+.image-center-please img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.image-center-please img:hover{
+  -webkit-filter: blur(5px);
+}
+ .image-repeats {
+   margin: 5px;
+   height: 150px;
+   width: 150px;
+ }

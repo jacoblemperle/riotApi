@@ -1,28 +1,15 @@
-<!doctype html>
+
 <html lang="en" ng-app="statsApp">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" >
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/base/reset.css">
-   <!-- <link rel="stylesheet" href="styles/fonts/fonts.css"> -->
     <link rel="stylesheet" href="styles/views/about.css">
     <link rel="stylesheet" href="styles/views/main.css">
     <link rel="stylesheet" href="styles/views/home.css">
     <link rel="stylesheet" href="styles/views/contact.css">
-
-    <!--font family-->
-    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50" ng-controller="mainCtrl">
     <nav class="navbar navbar-inverse  navbar-fixed-top" >
@@ -40,7 +27,6 @@
             <ul class="nav navbar-nav navbar-right">
               <li ><a ui-sref="home">Home</a></li>
               <li ><a ui-sref="about">About</a></li>
-              <li ><a ui-sref="about">Services</a></li>
               <li ><a ui-sref="contact">Contact</a></li>
             </ul>
           </div>
@@ -52,12 +38,15 @@
     <header>
       <div class="container" >
 
+
         <div class="intro-text">
   <div class="intro-heading"></div>
         </div>
       </div>
+
     </header>
-    <ui-view></ui-view>
+
+    <ui-view autoscroll="true"></ui-view>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>

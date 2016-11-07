@@ -8,22 +8,21 @@
   background-color:transparent;
   border-color:transparent;
   margin-bottom:0px;
-  font-family: 'Droid Serif', serif;
   font-size:20px;
 }
 
 .navbar-brand {
   font-size:30px;
-  font-family: 'Droid Serif', serif;
 }
 
 header {
   text-align: center;
   color: #fff;
-  height: 400px;
+  height: 30vh;
+  width: 100vw;
   background-attachment: scroll;
-  background-image: url("../../img/brand-image.jpg");
-  background-position: center center;
+  background-image: url("../../img/shadowisle.jpg");
+  background-position: 35% 0;
   background-repeat: none;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -39,7 +38,6 @@ header .intro-text {
 header .intro-text .intro-heading {
   margin-bottom: 25px;
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
@@ -51,10 +49,16 @@ header .intro-text .intro-heading {
     padding-bottom: 200px;
   }
 
+    header {
+      background-position: center;
+      width: 100vw;
+      height: 40vh;
+      padding-bottom: 200px;
+    }
+
   header .intro-text .intro-heading {
     margin-bottom: 50px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
@@ -64,39 +68,7 @@ header .intro-text .intro-heading {
 .navbar.trans {
   background:gray !important;
 }
-/*.home-page-container {
-  width: 100%;
-  height: 40vh;
-  min-height: 300px;
-  position: relative;
-  background: url('../../img/mountain-range.jpeg');
-  background-position: 20% 10%;
-  background-size: cover;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-attr {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 25px;
-  height: 10vh;
-  align-self: center;
-  position: fixed;
-  font-size: 25px;
-}
-
-
-a {
-  color: white;
-  font-weight: 500px;
-}
-
-.work-mother {
-
-  display: flex;
-  justify-content: space-around;
-}*/
+@media(max-width:768px) {
+  .navbar {
+    background-color: black;
+  }

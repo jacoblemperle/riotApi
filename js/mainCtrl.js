@@ -1,4 +1,4 @@
-angular.module('statsApp').controller('mainCtrl', function($scope, mainService, getSummoner) {
+angular.module('statsApp').controller('mainCtrl', function($scope, mainService) {
 
   $scope.getChampions = function() {
     mainService.getChampions().then(function(champs) {

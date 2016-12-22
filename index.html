@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/views/home.css">
     <link rel="stylesheet" href="styles/views/contact.css">
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50" ng-controller="mainCtrl">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" ng-controller="mainCtrl" ng-controller="championStatCtrl">
     <nav class="navbar navbar-inverse  navbar-fixed-top" >
       <div class="conatiner-fluid">
         <div class="navbar-header" role="navigation">
@@ -46,13 +46,14 @@
 
     </header>
 
-    <ui-view autoscroll="true"></ui-view>
+    <ui-view ></ui-view>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="js/app.js"></script>
     <script src="js/mainCtrl.js"></script>
+    <script src="js/championStatCtrl.js"></script>
     <script src="js/services/mainService.js"></script>
     <script src="js/services/getSummoner.js"></script>
     <script src="js/navbarchange.js"></script>

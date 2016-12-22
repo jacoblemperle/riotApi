@@ -7,7 +7,8 @@ angular.module('statsApp', ['ui.router'])
     })
     .state('about', {
       url: '/about',
-      templateUrl: "../views/about.html"
+      templateUrl: "../views/about.html",
+      
     })
     .state('contact', {
       url: '/contact',

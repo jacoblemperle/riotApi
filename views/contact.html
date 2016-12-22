@@ -1,3 +1,10 @@
 Contact Page
-<!-- <input type="text"  ng-model="summonerName" ng-submit="getSpecificSummoner(summoner)" value="Insert Summoner Name" /> -->
-<!-- <button type="button" name="button"></button> -->
+<input type="text"  ng-model="summonerName"  value="acho0" />
+<button type="button" name="button" ng-click="getSpecificSummoner(summonerName)">Submit Summoner</button>
+<div class="" ng-repeat="sumHistory in summonerInfo">
+
+  <p>
+    {{sumHistory.id}}
+    {{sumHistory.stats.maxChampionsKilled}}
+  </p>
+</div>
